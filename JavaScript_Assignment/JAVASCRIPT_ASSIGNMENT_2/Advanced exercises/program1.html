@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> First even no using slice function</title>
+        <script>
+            const isEven = function(num){
+                return (num % 2 === 0);
+            }
+            document.write(isEven(3) + "</br>");
+            document.write(isEven(4)+ "</br>");
+
+            function find(arr){  
+
+                    if(isEven(arr[0]) == true){
+                        return arr[0];
+                    }
+                    var even =  find(arr.slice(1));
+                    return even; 
+            } 
+            
+            document.write("First Even No is : "+find([1,3,5,4,7,8,2,6]));
+
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS Assign 4 with push operation</title>
+        <script>
+            function Even(arr){
+                let newArr = []; 
+                if(arr.length === 0){
+                    return newArr;
+                }
+                if(arr[0] % 2 == 0){
+                    newArr.push(arr[0]); 
+                }
+ 
+                newArr = newArr.concat(Even(arr.slice(1))); 
+                return newArr;   
+            }
+            document.write("<br>"+Even([1,3,5,4,7,8,2,6]))
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>

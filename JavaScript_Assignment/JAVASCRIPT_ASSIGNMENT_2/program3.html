@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS Assignment 3</title>
+        <script>
+            const isEven = function(num){
+                return (num % 2 == 0);
+            }
+            document.write(isEven(3) + "</br>");
+            document.write(isEven(4)+ "</br>");
+
+            var find=function(arr,isEven){
+                for(i=0;i<arr.length;i++){
+                    if(isEven(arr[i])==true){
+                        document.write("First Even No is : "+arr[i]+"<br>");
+                        break;
+                    }
+                }
+
+            }
+            // var arr =[1,2,3,4,5,7,8];
+            var arr1 = [1,3,5,4,2]
+            // find(arr,isEven);
+            find(arr1,isEven)
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>
